@@ -1,0 +1,170 @@
+2024-02-01T15:35:36.990+11:00  INFO 17896 --- [main] o.s.boot.SpringApplication               : 
+             --------
+        V   | Mock ? |   -------       V
+      (o o) |/-------   | Mock ! \   (o o)
+     (  V  )             ---------- (  V  )
+.......m.m............................m.m........
+
+2024-02-01T15:35:37.138+11:00  INFO 17896 --- [main] com.mockservice.MockServiceApplication   : Starting MockServiceApplication using Java 17.0.8 with PID 17896 (C:\Users\kst\_projects\mockservice\target\classes started by kst in C:\Users\kst\_projects\mockservice)
+2024-02-01T15:35:37.141+11:00  INFO 17896 --- [main] com.mockservice.MockServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-02-01T15:35:40.909+11:00  INFO 17896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-02-01T15:35:40.953+11:00  INFO 17896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-01T15:35:40.953+11:00  INFO 17896 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-02-01T15:35:41.179+11:00  INFO 17896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-01T15:35:41.180+11:00  INFO 17896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3910 ms
+2024-02-01T15:35:42.461+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/jwt, alt=)
+2024-02-01T15:35:42.467+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/api/v2/entity, alt=)
+2024-02-01T15:35:42.467+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/v2/entity, alt=400)
+2024-02-01T15:35:42.468+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=PUT, path=/api/v2/entity, alt=)
+2024-02-01T15:35:42.468+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=PUT, path=/api/v2/entity, alt=x = 5)
+2024-02-01T15:35:42.469+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=DELETE, path=/api/v2/entity/{id}, alt=)
+2024-02-01T15:35:42.470+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/api/robot, alt=)
+2024-02-01T15:35:42.470+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/robot, alt=R2D2)
+2024-02-01T15:35:42.470+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/robot, alt=terminator)
+2024-02-01T15:35:42.471+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=POST, path=/v2/store/order, alt=)
+2024-02-01T15:35:42.471+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=POST, path=/v2/store/order, alt=400)
+2024-02-01T15:35:42.496+11:00  INFO 17896 --- [main] c.m.w.i.ConfigBasedSoapController        : Register route (success): (method=POST, path=/mockNumberConversion, alt=)
+2024-02-01T15:35:43.593+11:00  WARN 17896 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/webapp/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-02-01T15:35:43.636+11:00  INFO 17896 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-01T15:35:43.819+11:00  INFO 17896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-02-01T15:35:43.862+11:00  INFO 17896 --- [main] com.mockservice.MockServiceApplication   : Started MockServiceApplication in 7.874 seconds (process running for 9.41)
+2024-02-01T15:35:43.964+11:00  INFO 17896 --- [main] com.mockservice.MockServiceApplication   : ForkJoinPool parallelism = 3, poolSize = 0
+2024-02-01T15:35:43.992+11:00  INFO 17896 --- [main] com.mockservice.MockServiceApplication   : 
+--------------------------------------------------------------------------------------------------------------------
+MockService is running at: http://localhost:8081/ and http://192.168.56.1:8081/ (dev mode UI http://localhost:3000/)
+--------------------------------------------------------------------------------------------------------------------
+2024-02-01T15:36:00.934+11:00  INFO 17896 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-01T15:36:00.934+11:00  INFO 17896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-01T15:36:00.936+11:00  INFO 17896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-02-01T15:36:01.293+11:00 ERROR 17896 --- [http-nio-8081-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8081-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024-02-01T15:36:01.301+11:00 ERROR 17896 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024-02-01T15:36:01.405+11:00  WARN 17896 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2024-02-01T15:37:02.591+11:00  INFO 8048 --- [main] o.s.boot.SpringApplication               : 
+             --------
+        V   | Mock ? |   -------       V
+      (o o) |/-------   | Mock ! \   (o o)
+     (  V  )             ---------- (  V  )
+.......m.m............................m.m........
+
+2024-02-01T15:37:02.957+11:00  INFO 8048 --- [main] com.mockservice.MockServiceApplication   : Starting MockServiceApplication using Java 17.0.8 with PID 8048 (C:\Users\kst\_projects\mockservice\target\classes started by kst in C:\Users\kst\_projects\mockservice)
+2024-02-01T15:37:02.959+11:00  INFO 8048 --- [main] com.mockservice.MockServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-02-01T15:37:07.744+11:00  INFO 8048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-02-01T15:37:07.769+11:00  INFO 8048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-01T15:37:07.769+11:00  INFO 8048 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-02-01T15:37:08.305+11:00  INFO 8048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-01T15:37:08.306+11:00  INFO 8048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5112 ms
+2024-02-01T15:37:10.422+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/jwt, alt=)
+2024-02-01T15:37:10.425+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/api/v2/entity, alt=)
+2024-02-01T15:37:10.425+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/v2/entity, alt=400)
+2024-02-01T15:37:10.426+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=PUT, path=/api/v2/entity, alt=)
+2024-02-01T15:37:10.426+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=PUT, path=/api/v2/entity, alt=x = 5)
+2024-02-01T15:37:10.433+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=DELETE, path=/api/v2/entity/{id}, alt=)
+2024-02-01T15:37:10.434+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=GET, path=/api/robot, alt=)
+2024-02-01T15:37:10.434+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/robot, alt=R2D2)
+2024-02-01T15:37:10.434+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=GET, path=/api/robot, alt=terminator)
+2024-02-01T15:37:10.435+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (success): (method=POST, path=/v2/store/order, alt=)
+2024-02-01T15:37:10.435+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedRestController        : Register route (skip - exist): (method=POST, path=/v2/store/order, alt=400)
+2024-02-01T15:37:10.500+11:00  INFO 8048 --- [main] c.m.w.i.ConfigBasedSoapController        : Register route (success): (method=POST, path=/mockNumberConversion, alt=)
+2024-02-01T15:37:11.963+11:00  WARN 8048 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/webapp/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-02-01T15:37:12.005+11:00  INFO 8048 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-01T15:37:12.259+11:00  INFO 8048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-02-01T15:37:12.310+11:00  INFO 8048 --- [main] com.mockservice.MockServiceApplication   : Started MockServiceApplication in 11.289 seconds (process running for 12.308)
+2024-02-01T15:37:12.443+11:00  INFO 8048 --- [main] com.mockservice.MockServiceApplication   : ForkJoinPool parallelism = 3, poolSize = 0
+2024-02-01T15:37:12.496+11:00  INFO 8048 --- [main] com.mockservice.MockServiceApplication   : 
+--------------------------------------------------------------------------------------------------------------------
+MockService is running at: http://localhost:8081/ and http://192.168.56.1:8081/ (dev mode UI http://localhost:3000/)
+--------------------------------------------------------------------------------------------------------------------
