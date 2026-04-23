@@ -95,6 +95,15 @@ public class OpenApiServiceImpl implements OpenApiService {
         List<Server> servers = openApi.getServers();
         Pattern pattern = Pattern.compile(URL_PARTS_REGEX, Pattern.CASE_INSENSITIVE + Pattern.UNICODE_CASE);
         for (Server server : servers) {
+            String url = server.getUrl();
+            if (url == null || url.isEmpty()) {
+                continue;
+            }
+            // Handle relative paths (e.g. "/api/v1/")
+            if (url.startsWith("/")) {
+                paths.add(url);
+                continue;
+            }
             Matcher matcher = pattern.matcher(server.getUrl());
             if (matcher.find()) {
                 paths.add(matcher.group(3));
